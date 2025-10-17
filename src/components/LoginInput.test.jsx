@@ -1,5 +1,6 @@
 // Skenario:
 // - Pengguna mengisi Username & Password lalu klik Login, komponen memanggil props login(id, password)
+import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';

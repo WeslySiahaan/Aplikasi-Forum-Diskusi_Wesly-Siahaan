@@ -1,6 +1,7 @@
 // Skenario:
 // - Render konten: nama user, kategori, total komentar, teks pendukung terlihat
 // - Interaksi: klik tombol Like memanggil handler dengan id talk
+import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
 import { MemoryRouter } from 'react-router-dom';
 import { render, screen } from '@testing-library/react';
