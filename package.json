@@ -1,0 +1,55 @@
+{
+  "name": "react-expert-study-case",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "preview:test": "vite preview --port 4173",
+    "lint": "eslint ./src --fix",
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "e2e": "npm run build && playwright test",
+    "e2e:ui": "playwright test --ui",
+    "e2e:install": "playwright install --with-deps"
+  },
+  "dependencies": {
+    "@dimasmds/react-redux-loading-bar": "^5.0.10",
+    "@reduxjs/toolkit": "^2.9.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.5",
+    "react-icons": "^4.8.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^6.10.0",
+    "redux": "^5.0.1"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.0",
+    "@eslint/js": "^9.12.0",
+    "@playwright/test": "^1.48.2",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^9.12.0",
+    "eslint-config-dicodingacademy": "^0.9.4",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc-1460d67c-20241003",
+    "globals": "^15.10.0",
+    "vite": "^4.2.0",
+    "vitest": "^3.2.4"
+  },
+  "vitest": {
+    "environment": "jsdom",
+    "setupFiles": [
+      "src/test/setupTests.js"
+    ]
+  },
+  "packageManager": "npm@10.9.0+sha512.65a9c38a8172948f617a53619762cd77e12b9950fe1f9239debcb8d62c652f2081824b986fee7c0af6c0a7df615becebe4bf56e17ec27214a87aa29d9e038b4b"
+}
