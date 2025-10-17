@@ -20,3 +20,5 @@ TalksList.propTypes = {
 };
 
 export default TalksList;
+
+//Test
